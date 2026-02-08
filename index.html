@@ -6,7 +6,7 @@
     <title>Triple Espresso</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/index.css" />
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <header class="header">
@@ -47,7 +47,71 @@
         </p>
       </div>
     </header>
-    <main class="content"></main>
+
+    <main class="content">
+      <section class="reservation">
+        <h2 class="reservation__title">Reservar una mesa</h2>
+        <form class="reservation__form">
+          <fieldset class="reservation__fieldset">
+            <label for="name" class="form__label">Nombre *</label>
+            <input
+              type="text"
+              minlength="1"
+              maxlength="20"
+              id="name"
+              class="form__input"
+              name="name"
+              required
+            />
+
+            <label for="guestNumber" class="form__label"
+              >Numero de comensales *</label
+            >
+            <input
+              type="number"
+              min="1"
+              max="8"
+              id="guestNumber"
+              class="form__input"
+              name="guestNumber"
+              required
+            />
+
+            <label for="datetime" class="form__label">Fecha y hora *</label>
+            <input
+              type="datetime-local"
+              id="datetime"
+              class="form__input"
+              name="date"
+              required
+            />
+
+            <label for="email" class="form__label"
+              >Tu correo electrónico *</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="form__input"
+              name="email"
+              required
+            />
+          </fieldset>
+          <button type="submit" class="form__button">Reservar una mesa</button>
+          <label for="terms" class="form__label">
+            <input
+              type="checkbox"
+              id="terms"
+              name="terms"
+              class="form__checkbox"
+              required
+            />
+            Acepto los terminos y condiciones
+          </label>
+        </form>
+      </section>
+    </main>
+
     <footer class="footer"></footer>
   </body>
 </html>

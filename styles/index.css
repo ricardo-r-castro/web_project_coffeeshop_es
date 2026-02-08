@@ -136,5 +136,8 @@ body {
   line-height: 20px;
   color: #6f6f6f;
 }
+.header__location {
+  align-content: flex-end;
+}
 /*al final me quedo un hueco o vacio que no supe como resolver
 aparte el texto de "ubicacion" quedo tocando la imagen y tampoco supe resolver eso */
