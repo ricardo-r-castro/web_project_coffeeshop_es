@@ -61,6 +61,7 @@
               id="name"
               class="form__input"
               name="name"
+              placeholder="Nombre"
               required
             />
 
@@ -74,6 +75,7 @@
               id="guestNumber"
               class="form__input"
               name="guestNumber"
+              placeholder="1-8"
               required
             />
 
@@ -81,8 +83,9 @@
             <input
               type="datetime-local"
               id="datetime"
-              class="form__input"
+              class="form__input date"
               name="date"
+              placeholder="dd/mm/aaaa"
               required
             />
 
@@ -94,10 +97,13 @@
               id="email"
               class="form__input"
               name="email"
+              placeholder="email@email.com"
               required
             />
+            <button type="submit" class="form__button">
+              Reservar una mesa
+            </button>
           </fieldset>
-          <button type="submit" class="form__button">Reservar una mesa</button>
           <label for="terms" class="form__label">
             <input
               type="checkbox"
