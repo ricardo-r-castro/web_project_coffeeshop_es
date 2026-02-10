@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
-
+/*
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter/Inter-VariableFont_opsz,wght.ttf") format("truetype");
@@ -24,7 +24,7 @@
   font-style: italic;
   font-weight: 100 900;
 }
-
+*/
 body {
   margin: 0;
   padding: 0;
@@ -232,7 +232,7 @@ body {
   margin-right: 10px;
 }
 
-.form__checkbox:enabled {
+.form__checkbox:checked {
   background-image: url(../images/check.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -242,7 +242,6 @@ body {
 
 .footer {
   background-color: #d35722;
-  background-image: url();
 }
 
 .footer__circle {
@@ -256,7 +255,7 @@ body {
   left: -44px;
 }
 
-.footer_logo {
+.footer__logo {
   position: relative;
   z-index: 1;
 }
@@ -298,7 +297,7 @@ body {
   gap: 10px;
 }
 
-.footer__link image {
+.footer__link img {
   list-style: none;
 }
 
